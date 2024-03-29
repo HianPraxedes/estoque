@@ -1,0 +1,137 @@
+.lista-vendas-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-left: 250px; /* ajuste conforme necessário para corresponder à largura da sua barra lateral */
+  }
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group input[type="text"] {
+    width: 200px;
+    padding: 8px;
+    margin-right: 10px;
+  }
+  
+  .input-group button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .tabela-produtos-disponiveis,
+  .tabela-produtos-selecionados {
+    margin-bottom: 40px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  .table-wrapper {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
+  }
+  .app-container {
+    display: flex;
+    height: 100vh; /* Altura total da janela do navegador */
+  }
+  
+  .content-container {
+    flex-grow: 1; /* Ocupa todo o espaço restante */
+    overflow-y: auto; /* Adiciona barra de rolagem vertical se necessário */
+  }
+  
+  
+  .btn {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+
+  .input {
+    max-width: 190px;
+    background-color: #e7e6e6;
+    color: #242424;
+    padding: .15rem .5rem;
+    min-height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border:#242424;
+    line-height: 1.15;
+    box-shadow: 0px 10px 20px -18px;
+  }
+  
+  input:focus {
+    border-bottom: 2px solid #000000;
+    border-radius: 4px 4px 2px 2px;
+  }
+  
+  input:hover {
+    outline: 1px solid lightgrey;
+  }
+
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  .card-header {
+    background-color: #f0f0f0;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .card-body {
+    padding: 10px 0;
+  }
+  
+  .produto-card {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+  }
+  
+  .card-footer {
+    background-color: #f0f0f0;
+    padding: 5px;
+    border-top: 1px solid #ccc;
+    border-radius: 0 0 5px 5px;
+  }
+  
+  

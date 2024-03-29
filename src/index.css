@@ -1,0 +1,211 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: hsl(0, 0%, 10%);
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+
+.main-content {
+  margin-left: 270px; /* Adapte o valor conforme a largura da sua barra lateral */
+  padding: 20px;
+}
+
+.sidebar h2 {
+  color: #ffffff; /* Cor do título */
+  border-bottom: 2px solid #ffffff; /* Adicionar contorno na parte inferior do título */
+  padding-bottom: 30px; /* Adicionar um espaçamento para separar o contorno do texto */
+  text-align: center; /* Centralizar o texto */
+}
+.sidebar h3 {
+  color: #ffffff; /* Cor do título */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+.sidebar ul li:hover {
+  color: #ffffff; /* Cor ao passar o mouse sobre os itens da lista */
+}
+
+.sidebar button {
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  position: relative;
+  color: black;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+  cursor: pointer;
+  margin-bottom: 10px; /* Adicionar espaço entre os botões */
+  width: 100%;
+}
+
+.sidebar button:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: rgb(24, 24, 24);
+  z-index: -1;
+}
+
+.sidebar button:hover, button:focus {
+  color: white;
+}
+
+.sidebar button:hover:before, button:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.sidebar button:active {
+  transform: scale(0.9);
+}
+
+.input {
+  max-width: 190px;
+  background-color: #e7e6e6;
+  color: #242424;
+  padding: .15rem .5rem;
+  min-height: 40px;
+  border-radius: 4px;
+  outline: none;
+  border:#242424;
+  line-height: 1.15;
+  box-shadow: 0px 10px 20px -18px;
+}
+
+input:focus {
+  border-bottom: 2px solid #000000;
+  border-radius: 4px 4px 2px 2px;
+}
+
+input:hover {
+  outline: 1px solid lightgrey;
+}
+
+.page-content {
+  margin-left: 250px; /* ajuste conforme necessário para corresponder à largura da sua barra lateral */
+  padding: 20px; /* adicione algum preenchimento para separar o conteúdo da borda da tela */
+}
+
+.input-group {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.input-group label {
+  width: 150px; /* Largura do rótulo */
+  margin-right: 45px; /* Adicione espaço entre as labels */
+
+}
+
+.input-group input {
+  flex: 1; /* Isso permite que o input ocupe todo o espaço restante */
+  height: 30px;
+  margin-right: 20px; /* Adicione espaço entre as labels */
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end; /* Alinha o botão à direita */
+}
+
+
+.btn {
+  position: relative;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em 2.5em;
+  display: inline-block;
+  border-radius: 6em;
+  transition: all .2s;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #302f2f;
+  cursor: pointer;
+  margin-left: 10px;
+
+ }
+ 
+ .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+ }
+ 
+ .btn::after {
+  background-color: #fff;
+ }
+ 
+ .btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+ }
+ .styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+.styled-table th, .styled-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.styled-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.styled-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.styled-table tr:hover {
+  background-color: #ddd;
+}
