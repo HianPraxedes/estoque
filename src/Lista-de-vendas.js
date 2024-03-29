@@ -39,6 +39,11 @@ const ListaVendas = () => {
   useEffect(() => {
     fetchCompras();
   }, [fetchCompras]);
+
+  const handleDelete = (id) => {
+    // Função para excluir a compra do banco de dados
+    firebase.database().ref(`compras/${id}`).remove();
+  };
   
   return (
     <div className="lista-vendas-container">
@@ -77,7 +82,10 @@ const ListaVendas = () => {
         {compras.length > 0 ? (
           compras.map((compra) => (
             <div className="card" key={compra.id}>
-              <div className="card-header">{compra.data}</div>
+              <div className="card-header">
+                <div>{compra.data}</div>
+                <button className="btn-delete" onClick={() => handleDelete(compra.id)}>Apagar Venda</button>
+              </div>
               <div className="card-body">
                 {compra.produtos.map((produto, index) => (
                   <div className="produto-card" key={index}>
